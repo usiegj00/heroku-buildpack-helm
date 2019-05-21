@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Open build dir
+cd $1 && \
+
+mkdir custom-bin && \
+echo "Downloading helm from https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-linux-amd64.tar.gz" &&\
+wget https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-linux-amd64.tar.gz -O- | tar -xz --strip 1 linux-amd64/helm && \
+mv helm custom-bin && \
+echo "export PATH=$PATH:$HOME/custom-bin" >> .profile.d/custom_binaries.sh

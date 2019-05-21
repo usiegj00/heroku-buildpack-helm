@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# this pack is always valid as soon as it is added to a heroku project
+exit 0

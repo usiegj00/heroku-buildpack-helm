@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Nothing here
+cat << EOF
+---
+EOF
