@@ -16,4 +16,4 @@ echo "Downloading helm from https://get.helm.sh/helm-$HELM_VERSION-linux-amd64.t
 wget https://get.helm.sh/helm-$HELM_VERSION-linux-amd64.tar.gz -O- | tar -xz --strip 1 linux-amd64/helm
 mv helm custom-bin
 
-echo "export PATH=$PATH:$HOME/custom-bin" >> .profile.d/custom_binaries.sh
+echo "export PATH=\$PATH:\$HOME/custom-bin" >> .profile.d/custom_binaries.sh
